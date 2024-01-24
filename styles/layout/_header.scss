@@ -181,6 +181,8 @@ header {
     }
   }
 }
+// nav media
+
 .them1 {
   display: none;
 }
@@ -196,6 +198,33 @@ nav.sticky {
 }
 
 // header
+
+nav {
+  .container {
+    .ste_bar {
+      z-index: 10;
+      right: 0;
+      display: none;
+      div {
+        width: 35px;
+        height: 3px;
+        background-color: var(--navtext);
+        margin: 5px auto 0 auto;
+      }
+    }
+    .ste_bar.active div:nth-child(2) {
+      opacity: 0;
+    }
+
+    .ste_bar.active div:nth-child(1) {
+      transform: translateY(8px) rotate(45deg);
+    }
+
+    .ste_bar.active div:nth-child(3) {
+      transform: translateY(-8px) rotate(-45deg);
+    }
+  }
+}
 
 // nav media
 

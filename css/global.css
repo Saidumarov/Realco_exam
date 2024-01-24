@@ -1865,6 +1865,12 @@ main .min_hom .container .min_hom_right img {
   .locations .container .location_cards div {
     width: 330px;
   }
+  .locations .container .family {
+    height: 510px;
+  }
+  .locations .container .family .family_img {
+    left: 44%;
+  }
 }
 @media screen and (max-width: 360px) {
   .locations .container .location_cards div {

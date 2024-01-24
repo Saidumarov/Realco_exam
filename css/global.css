@@ -64,6 +64,182 @@ html {
   scroll-snap-type: mandatory;
 }
 
+footer {
+  width: 100%;
+  height: 350px;
+}
+footer .container {
+  display: flex;
+}
+footer .container .footer_left {
+  width: 70%;
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 50px;
+}
+footer .container .footer_left div {
+  width: 25%;
+  height: 100%;
+}
+footer .container .footer_left div p a {
+  color: var(--text_color);
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 35px; /* 150% */
+  text-decoration: none;
+}
+footer .container .footer_left .top svg {
+  fill: var(--svg1);
+}
+footer .container .footer_right {
+  padding-bottom: 50px;
+  width: 30%;
+  height: 100%;
+}
+footer .container .footer_right .form_p {
+  color: var(--navtext);
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 150% */
+}
+footer .container .footer_right .form_p1 {
+  color: var(--text_color);
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 150% */
+  padding-top: 20px;
+}
+footer .container .footer_right .form {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 20px;
+}
+footer .container .footer_right .form input {
+  width: 240px;
+  height: 48px;
+  flex-shrink: 0;
+  border-radius: 6px;
+  border: 1px solid #e7e8e3;
+  background: #fff;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.08);
+  color: #65665c;
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 150% */
+  padding-left: 30px;
+  outline: none;
+}
+footer .container .footer_right .form button {
+  width: 127px;
+  height: 50px;
+  flex-shrink: 0;
+  border-radius: 6px;
+  border: 1px solid #cf6f49;
+  background: #cf6f49;
+  color: #fff;
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 150% */
+  cursor: pointer;
+}
+footer .container .footer_right .form_p2 {
+  color: var(--text_color);
+  font-family: Roboto;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px; /* 150% */
+  padding-top: 10px;
+}
+footer .footer_bottom {
+  width: 100%;
+  height: 100px;
+  background-color: var(--min_hom);
+}
+footer .footer_bottom .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+footer .footer_bottom .container p {
+  padding-top: 35px;
+  color: var(--text_color);
+  font-family: Roboto;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 21px; /* 150% */
+}
+footer .footer_bottom .container .footer_ico {
+  padding-top: 35px;
+}
+footer .footer_bottom .container .footer_ico svg {
+  fill: var(--svg1);
+}
+
+@media screen and (max-width: 1220px) {
+  footer .container {
+    flex-wrap: wrap;
+  }
+  footer .container .footer_left {
+    width: 100%;
+  }
+  footer .container .footer_right {
+    margin: 0 auto;
+    width: 100%;
+  }
+}
+@media screen and (max-width: 530px) {
+  footer {
+    position: relative;
+  }
+  footer .container {
+    flex-wrap: wrap;
+  }
+  footer .container .footer_left {
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: space-between;
+  }
+  footer .container .footer_left div:nth-child(1) {
+    position: absolute;
+    top: -70px;
+    left: 40%;
+  }
+  footer .container .footer_right {
+    margin: 0 auto;
+    width: 100%;
+  }
+}
+@media screen and (max-width: 530px) {
+  footer .container .footer_left div:nth-child(1) {
+    position: absolute;
+    top: -70px;
+    left: 35%;
+  }
+  footer .container .footer_right .form input {
+    width: 60%;
+  }
+  footer .container .footer_right .form button {
+    width: 35%;
+  }
+}
+html {
+  scroll-snap-type: mandatory;
+}
+
 body {
   width: 100%;
   height: 100%;
@@ -71,7 +247,6 @@ body {
 }
 
 header {
-  background-color: #2a2c1f;
   transition: 0.3s;
   width: 100%;
   position: absolute;
@@ -237,6 +412,15 @@ header nav .container .nav_right .find_nav {
   font-family: Roboto;
   font-size: 16px;
   cursor: pointer;
+}
+
+.header_top.active {
+  transition: 0.4s all ease-in-out;
+  margin-left: -100%;
+}
+
+nav.active {
+  margin-top: -60px;
 }
 
 .them1 {

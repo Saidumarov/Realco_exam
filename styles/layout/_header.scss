@@ -9,7 +9,6 @@ body {
 
 // header
 header {
-  background-color: #2a2c1f;
   transition: 0.3s;
   width: 100%;
   position: absolute;
@@ -181,8 +180,14 @@ header {
     }
   }
 }
-// nav media
 
+.header_top.active {
+  transition: 0.4s all ease-in-out;
+  margin-left: -100%;
+}
+nav.active {
+  margin-top: -60px;
+}
 .them1 {
   display: none;
 }

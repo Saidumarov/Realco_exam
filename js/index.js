@@ -4,7 +4,8 @@ const dark = document.getElementById("dark");
 const them1 = document.getElementById("them1");
 const light1 = document.getElementById("light1");
 const dark1 = document.getElementById("dark1");
-
+const closee = document.querySelector(".x_bar");
+const header = document.getElementById("header");
 them.addEventListener("click", () => {
   const elRoot = document.documentElement;
   let dataTheme = elRoot.getAttribute("data-theme");
@@ -45,7 +46,19 @@ window.addEventListener("DOMContentLoaded", function () {
 
 const navItem = document.querySelector(".ste_bar");
 const siteBar = document.querySelector(".site_bar_text");
+const main = document.querySelector("main");
+
+const nav = document.querySelector("nav");
 navItem.addEventListener("click", () => {
   navItem.classList.toggle("active");
   siteBar.classList.toggle("active");
+});
+
+closee.addEventListener("click", () => {
+  header.classList.toggle("active");
+  nav.classList.toString("active");
+  setTimeout(() => {
+    header.style.position = "absolute";
+    main.style.paddingTop = "80px";
+  }, 300);
 });

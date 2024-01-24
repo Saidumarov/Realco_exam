@@ -1,0 +1,30 @@
+:root[data-theme="dark"] {
+  --nav: #1a202c;
+  --nav1: #1a202c;
+  --svg: rgb(26, 32, 43);
+  --navtext: rgb(255, 255, 255);
+  --svg1: rgb(235, 242, 242);
+  --min_hom: rgb(34, 42, 56);
+  --opasity: 0.5;
+  --min_hom_t: #e7e8e3;
+  --body: rgb(34, 42, 56);
+  --min_p: #65665c;
+  --logo: rgb(235, 242, 242);
+  --text_color: rgb(235, 242, 242);
+  --card: rgb(39, 48, 63);
+}
+:root[data-theme="light"] {
+  --nav: #ffff;
+  --nav1: rgb(235, 242, 242);
+  --navtext: #171923;
+  --svg: rgb(227, 237, 237);
+  --svg1: #2a2c1f;
+  --min_hom: rgb(245, 245, 242);
+  --opasity: 1;
+  --min_hom_t: #e7e8e3;
+  --min_p: #65665c;
+  --logo: #737680;
+  --body: #ffff;
+  --text_color: #65665c;
+  --card: #ffffff;
+}

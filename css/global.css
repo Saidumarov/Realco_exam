@@ -534,7 +534,6 @@ main .min_hom .container .min_hom_right img {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-  opacity: var(--opasity);
   transition: 0.4s all ease-in-out;
 }
 
@@ -842,7 +841,6 @@ main .min_hom .container .min_hom_right img {
 
 .products {
   position: relative;
-  margin-bottom: 100px;
   background-color: var(--min_hom);
   padding-top: 150px;
   padding-bottom: 100px;
@@ -1015,6 +1013,169 @@ main .min_hom .container .min_hom_right img {
   font-weight: 400;
   line-height: 24px; /* 150% */
   transition: 0.4s all ease-in-out;
+}
+
+.locations {
+  width: 100%;
+  background-color: var(--min_hom);
+  margin-bottom: 280px;
+  height: 1000px;
+}
+.locations .container h1 {
+  color: var(--navtext);
+  text-align: center;
+  font-family: Roboto;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 57.6px;
+  margin: 0;
+  padding-top: 20px;
+  transition: 0.4s all ease-in-out;
+}
+.locations .container .p {
+  color: var(--text_color);
+  text-align: center;
+  font-family: Roboto;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 27px;
+  width: 713px;
+  margin: 0 auto;
+  padding-top: 30px;
+  transition: 0.4s all ease-in-out;
+}
+.locations .container .location_cards {
+  width: 100%;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  justify-content: space-between !important;
+  padding-top: 40px;
+}
+.locations .container .location_cards div {
+  transition: 0.4s all ease-in-out;
+  width: 416px;
+  height: 130px;
+  flex-shrink: 0;
+  border-radius: 16px;
+  border: 1px solid #e7e8e3;
+  background: var(--card);
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.08);
+  margin-top: 20px;
+}
+.locations .container .location_cards div h2 {
+  color: var(--navtext);
+  font-family: Roboto;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 28px; /* 140% */
+  padding-top: 35px;
+  padding-left: 30px;
+}
+.locations .container .location_cards div p {
+  color: var(--text_color);
+  padding-top: 5px;
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 150% */
+  padding-left: 30px;
+}
+.locations .container .location_cards div p span svg {
+  fill: var(--svg1);
+}
+.locations .container .locations_btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  margin-top: 70px;
+  width: 500px;
+}
+.locations .container .locations_btn .btn {
+  color: #2a2c1f;
+  width: 192px;
+  height: 50px;
+  flex-shrink: 0;
+  border-radius: 6px;
+  border: 1px solid #e7e8e3;
+  background: #fff;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.08);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Roboto;
+}
+.locations .container .locations_btn .btn1 {
+  transition: 0.4s all ease-in-out;
+  color: var(--navtext);
+  font-family: Roboto;
+  padding-left: 30px;
+}
+.locations .container .locations_btn .btn1 svg {
+  transition: 0.4s all ease-in-out;
+  fill: var(--svg1);
+}
+.locations .container .family {
+  width: 1280px;
+  height: 465px;
+  flex-shrink: 0;
+  border-radius: 24px;
+  background: #65665c;
+  margin-top: 100px;
+  position: relative;
+}
+.locations .container .family .family_img {
+  width: 48px;
+  height: 48px;
+  border-radius: 8px;
+  background: #fff;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  left: 50%;
+  top: 60px;
+}
+.locations .container .family h1 {
+  color: white;
+  padding-top: 160px;
+}
+.locations .container .family p {
+  width: 765px;
+  color: #e7e8e3;
+  text-align: center;
+  font-family: Roboto;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 27px; /* 150% */
+  margin: 0 auto;
+  padding-top: 30px;
+}
+.locations .container .family button {
+  width: 137px;
+  height: 50px;
+  flex-shrink: 0;
+  border-radius: 6px;
+  border: 1px solid #cf6f49;
+  background: #cf6f49;
+  border: none;
+  outline: none;
+  display: block;
+  margin: 0 auto;
+  color: #fff;
+  text-align: center;
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 150% */
+  margin-top: 30px;
 }
 
 /* // Scrol */

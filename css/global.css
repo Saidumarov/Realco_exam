@@ -32,7 +32,7 @@
 }
 
 html {
-  scroll-snap-type: mandatory;
+  scroll-snap-type: mandatory !important;
 }
 
 * {
@@ -334,6 +334,7 @@ header nav .container .nav_left {
 header nav .container .nav_left svg {
   fill: var(--svg1);
   transition: 0.3s;
+  cursor: pointer;
 }
 header nav .container .nav_right {
   display: flex;
@@ -2210,4 +2211,89 @@ main .min_hom .container .min_hom_right img {
   bottom: 50px;
   opacity: 1;
   transition: 0.4s all ease-in-out;
+}
+
+.loader_w {
+  width: 100%;
+  height: 100vh;
+  background-color: rgb(255, 255, 255);
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  position: fixed;
+  z-index: 50;
+  transition: 0.6s all ease-in-out;
+}
+
+.loader_w.active {
+  transition: 0.6s all ease-in-out;
+  transform: scale(3);
+  opacity: 0;
+}
+
+.txt-loading .letters-loading {
+  font-family: Roboto;
+  font-weight: 570;
+  letter-spacing: 15px;
+  display: inline-block;
+  color: rgb(0, 0, 0);
+  position: relative;
+  font-size: 70px;
+  line-height: 70px;
+  animation: letters-loading 2.5s linear infinite;
+}
+
+.txt-loading1 .letters-loading {
+  font-family: Roboto;
+  font-weight: 570;
+  letter-spacing: 15px;
+  display: inline-block;
+  color: rgba(0, 0, 0, 0.338);
+  position: relative;
+  font-size: 70px;
+  line-height: 70px;
+}
+
+.txt-loading1 {
+  position: absolute;
+}
+
+.txt-loading .letters-loading:nth-child(1) {
+  animation-delay: 0s;
+}
+
+.txt-loading .letters-loading:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.txt-loading .letters-loading:nth-child(3) {
+  animation-delay: 0.4s;
+}
+
+.txt-loading .letters-loading:nth-child(4) {
+  animation-delay: 0.6s;
+}
+
+.txt-loading .letters-loading:nth-child(5) {
+  animation-delay: 0.8s;
+}
+
+.txt-loading .letters-loading:nth-child(6) {
+  animation-delay: 1s;
+}
+
+@keyframes letters-loading {
+  0%, 75%, 100% {
+    opacity: 0;
+    transform: rotateY(-90deg);
+  }
+  25%, 50% {
+    opacity: 1;
+    transform: rotateY(0deg);
+  }
+}
+@media screen and (max-width: 400px) {
+  .letters-loading.letters-loading {
+    font-size: 50px;
+  }
 }

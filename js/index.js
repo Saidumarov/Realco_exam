@@ -11,6 +11,7 @@ const siteBar = document.querySelector(".site_bar_text");
 const main = document.querySelector("main");
 const hover = document.querySelector(".hover");
 const slect = document.querySelector(".slect");
+const loading = document.getElementById("loading");
 
 const site_bar_text = document.querySelectorAll(".sitebar");
 them.addEventListener("click", () => {
@@ -73,7 +74,7 @@ closee.addEventListener("click", () => {
   nav.classList.toString("active");
   setTimeout(() => {
     header.style.position = "absolute";
-    main.style.paddingTop = "80px";
+    main.style.paddingTop = "70px";
   }, 300);
 });
 
@@ -87,3 +88,10 @@ slect.addEventListener("click", () => {
   hover.classList.toggle("active");
   slect.classList.toggle("active");
 });
+
+setTimeout(() => {
+  loading.classList.toggle("active");
+  setTimeout(() => {
+    loading.style.display = "none";
+  }, 5000);
+}, 4000);

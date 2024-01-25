@@ -9,6 +9,9 @@ const header = document.getElementById("header");
 const navItem = document.querySelector(".ste_bar");
 const siteBar = document.querySelector(".site_bar_text");
 const main = document.querySelector("main");
+const hover = document.querySelector(".hover");
+const slect = document.querySelector(".slect");
+
 const site_bar_text = document.querySelectorAll(".sitebar");
 them.addEventListener("click", () => {
   const elRoot = document.documentElement;
@@ -50,6 +53,8 @@ window.addEventListener("DOMContentLoaded", function () {
   (function () {
     window.addEventListener("scroll", function () {
       const nav = document.querySelector("nav");
+      const nav1 = document.querySelector(".nav_hover ");
+      nav1.classList.toggle("sticky", window.scrollY > 39);
       nav.classList.toggle("sticky", window.scrollY > 39);
       let up = document.querySelector(".up_btn");
       up.classList.toggle("active", window.scrollY > 250);
@@ -77,4 +82,8 @@ site_bar_text.forEach((element) => {
     siteBar.classList.toggle("active");
     navItem.classList.toggle("active");
   });
+});
+slect.addEventListener("click", () => {
+  hover.classList.toggle("active");
+  slect.classList.toggle("active");
 });

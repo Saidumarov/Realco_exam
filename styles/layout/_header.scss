@@ -50,7 +50,8 @@ header {
     width: 100%;
     height: 40px;
     background: #939878;
-
+    position: relative;
+    z-index: 5;
     .container {
       position: relative;
 
@@ -177,6 +178,62 @@ header {
     }
   }
 }
+.slect {
+  position: relative;
+  z-index: 3;
+  cursor: pointer;
+  color: var(--navtext);
+  svg {
+    transition: 0.4s all ease-in-out;
+  }
+}
+
+.hover {
+  position: absolute;
+  width: 100px;
+  height: 50px;
+  left: 65px;
+  display: block;
+  margin-top: -35px;
+  transition: 0.4s all ease-in-out;
+  background-color: var(--body);
+  z-index: 1;
+  border-top-right-radius: 0px;
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+
+  span {
+    display: block;
+    color: var(--navtext);
+    cursor: pointer;
+    line-height: 25px;
+    text-align: center;
+    text-align: center;
+    display: block;
+  }
+}
+.hover.active {
+  margin-top: 70px;
+}
+.slect.active {
+  svg {
+    transform: rotate(180deg);
+  }
+}
+.nav_hover {
+  transition: 0.4s all ease-in-out;
+  width: 100px;
+  height: 50px;
+  background-color: var(--nav);
+  position: absolute;
+  left: 65px;
+  top: -20px;
+  z-index: 2;
+}
+.nav_hover.sticky {
+  background-color: var(--nav1);
+}
 
 .header_top.active {
   transition: 0.4s all ease-in-out;
@@ -250,6 +307,26 @@ nav {
     .container {
       width: 98%;
     }
+  }
+}
+
+@media screen and (max-width: 1220px) {
+  .hover {
+    position: absolute;
+    width: 90px;
+  }
+  .nav_hover {
+    width: 90px;
+  }
+}
+
+@media screen and (max-width: 1170px) {
+  .hover {
+    position: absolute;
+    width: 85px;
+  }
+  .nav_hover {
+    width: 85px;
   }
 }
 

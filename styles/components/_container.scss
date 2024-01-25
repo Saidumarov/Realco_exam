@@ -20,9 +20,16 @@ body {
   box-sizing: border-box;
 }
 
+@media screen and (max-width: 1470px) {
+  .container {
+    overflow-y: hidden;
+  }
+}
+
 @media screen and (max-width: 1350px) {
   .container {
     width: 95%;
+    overflow-y: hidden;
   }
 }
 

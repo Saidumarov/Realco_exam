@@ -5,6 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Realco</title>
     <link rel="stylesheet" href="./css/global.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="./assets/images/logoSvg/logo.svg"
+    />
   </head>
   <body>
     <header id="home">
@@ -121,8 +127,10 @@
           <div class="nav_right">
             <div class="text_nav">
               <p><a href="#home"> Home </a></p>
-              <p>
-                <a href="#properties"> Properties </a>
+              <div class="nav_hover"></div>
+              <div class="hover"><span>Hello</span> <span>World</span></div>
+              <p class="slect">
+                Properties
                 <span class="pro">
                   <svg
                     width="10"
@@ -201,10 +209,10 @@
     <section class="logo_section" id="properties">
       <div class="container">
         <div class="logo_w">
-          <div class="logo_left">
+          <div class="logo_left" data-aos="fade-right">
             <p>As seen on the world's best magazines and media</p>
           </div>
-          <div class="logo_right">
+          <div class="logo_right" data-aos="fade-left">
             <span>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -406,13 +414,13 @@
           </div>
         </div>
         <div class="logo_section_card">
-          <h1 class="logo_h1">How it works</h1>
-          <p class="logo_p">
+          <h1 class="logo_h1" data-aos="zoom-in">How it works</h1>
+          <p class="logo_p" data-aos="zoom-in">
             Nunc laoreet consequat nunc at consequat. Praesent aliquam mi id
             efficitur pellentesque. Maecenas varius felis felis.
           </p>
           <div class="logo_cards">
-            <div class="card1">
+            <div class="card1" data-aos="fade-up">
               <div class="card_img">
                 <img src="./assets/images/house.png" alt="" />
               </div>
@@ -423,7 +431,7 @@
                 non.
               </p>
             </div>
-            <div class="card1">
+            <div class="card1" data-aos="fade-up">
               <div class="card_img">
                 <img src="./assets/images/receipt.png" alt="" />
               </div>
@@ -434,7 +442,7 @@
                 tortor ac mi.
               </p>
             </div>
-            <div class="card1">
+            <div class="card1" data-aos="fade-up">
               <div class="card_img">
                 <img src="./assets/images/key.png" alt="" />
               </div>
@@ -450,7 +458,7 @@
     </section>
     <section class="comfort" id="about">
       <div class="container">
-        <div class="comfort_left">
+        <div class="comfort_left" data-aos="fade-right">
           <div class="comfort_btn">Comfort first</div>
           <h1>The best houses for family comfort</h1>
           <p class="p">
@@ -475,17 +483,17 @@
             </p>
           </div>
         </div>
-        <div class="comfort_right">
+        <div class="comfort_right" data-aos="fade-left">
           <img src="./assets/images/IMAGE (9).png" alt="" />
         </div>
       </div>
     </section>
     <section class="content">
       <div class="container">
-        <div class="content_left">
+        <div class="content_left" data-aos="fade-right">
           <img src="./assets/images/IMAGE (10).png" alt="" />
         </div>
-        <div class="content_right">
+        <div class="content_right" data-aos="fade-left">
           <div class="content_btn">Quick and easy</div>
           <h1 class="content_h1">Fast forward process</h1>
           <p class="p">
@@ -541,10 +549,10 @@
         class="products_image_b"
       />
       <div class="container">
-        <div class="product_btn">Properties</div>
-        <h1>Houses in your favorite area</h1>
+        <div class="product_btn" data-aos="zoom-in-up">Properties</div>
+        <h1 data-aos="zoom-in-up">Houses in your favorite area</h1>
         <div class="product_cards">
-          <div class="product_card">
+          <div class="product_card" data-aos="fade-up">
             <div class="product_card_img">
               <img src="./assets/images/IMAGE (12).png" alt="" />
             </div>
@@ -617,7 +625,7 @@
               </div>
             </div>
           </div>
-          <div class="product_card">
+          <div class="product_card" data-aos="fade-up">
             <div class="product_card_img">
               <img src="./assets/images/IMAGE (13).png" alt="" />
             </div>
@@ -690,7 +698,7 @@
               </div>
             </div>
           </div>
-          <div class="product_card">
+          <div class="product_card" data-aos="fade-up">
             <div class="product_card_img">
               <img src="./assets/images/IMAGE (14).png" alt="" />
             </div>
@@ -763,7 +771,7 @@
               </div>
             </div>
           </div>
-          <div class="product_card">
+          <div class="product_card" data-aos="fade-up">
             <div class="product_card_img">
               <img src="./assets/images/IMAGE (15).png" alt="" />
             </div>
@@ -836,7 +844,7 @@
               </div>
             </div>
           </div>
-          <div class="product_card">
+          <div class="product_card" data-aos="fade-up">
             <div class="product_card_img">
               <img src="./assets/images/IMAGE (16).png" alt="" />
             </div>
@@ -909,7 +917,7 @@
               </div>
             </div>
           </div>
-          <div class="product_card">
+          <div class="product_card" data-aos="fade-up">
             <div class="product_card_img">
               <img src="./assets/images/IMAGE (17).png" alt="" />
             </div>
@@ -983,7 +991,7 @@
             </div>
           </div>
         </div>
-        <div class="products_btn_w">
+        <div class="products_btn_w" data-aos="zoom-in-up">
           <p class="btn">Explore properties</p>
           <p class="btn1">
             Contact agent
@@ -1009,13 +1017,13 @@
     </section>
     <section class="locations" id="family">
       <div class="container">
-        <h1>Locations</h1>
-        <p class="p">
+        <h1 data-aos="zoom-in-up">Locations</h1>
+        <p class="p" data-aos="fade-up">
           Nunc mi ante, fringilla eget iaculis et, maximus vel purus integer
           lacus urna, aliquet non nisl sit amet.
         </p>
         <div class="location_cards">
-          <div>
+          <div data-aos="flip-right">
             <h2>San Francisco, CA</h2>
             <p>
               View Properties
@@ -1034,7 +1042,7 @@
               </span>
             </p>
           </div>
-          <div>
+          <div data-aos="flip-right">
             <h2>San Francisco, CA</h2>
             <p>
               View Properties
@@ -1053,7 +1061,7 @@
               </span>
             </p>
           </div>
-          <div>
+          <div data-aos="flip-right">
             <h2>San Francisco, CA</h2>
             <p>
               View Properties
@@ -1072,7 +1080,7 @@
               </span>
             </p>
           </div>
-          <div>
+          <div data-aos="flip-right">
             <h2>San Francisco, CA</h2>
             <p>
               View Properties
@@ -1091,7 +1099,7 @@
               </span>
             </p>
           </div>
-          <div>
+          <div data-aos="flip-right">
             <h2>San Francisco, CA</h2>
             <p>
               View Properties
@@ -1110,7 +1118,7 @@
               </span>
             </p>
           </div>
-          <div>
+          <div data-aos="flip-right">
             <h2>San Francisco, CA</h2>
             <p>
               View Properties
@@ -1130,7 +1138,7 @@
             </p>
           </div>
         </div>
-        <div class="locations_btn">
+        <div class="locations_btn" data-aos="zoom-in-up">
           <p class="btn">Explore properties</p>
           <p class="btn1">
             Contact agent
@@ -1147,7 +1155,7 @@
             </svg>
           </p>
         </div>
-        <div class="family">
+        <div class="family" data-aos="zoom-in-up">
           <div class="family_img">
             <img src="./assets/images/family_restroom.png" alt="" />
           </div>
@@ -1163,10 +1171,12 @@
     </section>
     <section class="customers" id="contact">
       <div class="container">
-        <h1>What customers say</h1>
-        <p>Faucibus orci luctus et ultrices posuere cubilia curae.</p>
+        <h1 data-aos="zoom-in-up">What customers say</h1>
+        <p data-aos="zoom-in-up">
+          Faucibus orci luctus et ultrices posuere cubilia curae.
+        </p>
         <div class="customers_cards">
-          <div class="customers_card">
+          <div class="customers_card" data-aos="fade-up-right">
             <div class="customers_y">
               <img src="./assets/images/IMAGE.svg" alt="" />
               <img src="./assets/images/IMAGE.svg" alt="" />
@@ -1187,7 +1197,7 @@
               </div>
             </div>
           </div>
-          <div class="customers_card">
+          <div class="customers_card" data-aos="fade-up">
             <div class="customers_y">
               <img src="./assets/images/IMAGE.svg" alt="" />
               <img src="./assets/images/IMAGE.svg" alt="" />
@@ -1208,7 +1218,7 @@
               </div>
             </div>
           </div>
-          <div class="customers_card">
+          <div class="customers_card" data-aos="fade-up-left">
             <div class="customers_y">
               <img src="./assets/images/IMAGE.svg" alt="" />
               <img src="./assets/images/IMAGE.svg" alt="" />
@@ -1234,17 +1244,17 @@
     </section>
     <section class="blog" id="search">
       <div class="container">
-        <button class="blog_btn">Blog</button>
-        <h1>Latest posts</h1>
-        <p>
+        <button class="blog_btn" data-aos="fade-right">Blog</button>
+        <h1 data-aos="fade-right">Latest posts</h1>
+        <p data-aos="fade-right">
           Vestibulum ante ipsum primis in faucibus orci luctus et ultrices
           posuere cubilia curae. Praesent efficitur nibh massa morbi sagittis
           ornare dui in ornare.
         </p>
-        <button class="wel">View all</button>
+        <button class="wel" data-aos="fade-left">View all</button>
 
         <div class="blog_cards">
-          <div class="blog_card">
+          <div class="blog_card" data-aos="fade-up-right">
             <div class="product_card_img">
               <img src="./assets/images/IMAGE (12).png" alt="" />
             </div>
@@ -1274,7 +1284,7 @@
               </span>
             </p>
           </div>
-          <div class="blog_card">
+          <div class="blog_card" data-aos="fade-up">
             <div class="product_card_img">
               <img src="./assets/images/IMAGE (13).png" alt="" />
             </div>
@@ -1304,7 +1314,7 @@
               </span>
             </p>
           </div>
-          <div class="blog_card">
+          <div class="blog_card" data-aos="fade-up-left">
             <div class="product_card_img">
               <img src="./assets/images/IMAGE (14).png" alt="" />
             </div>
@@ -1337,7 +1347,7 @@
         </div>
       </div>
     </section>
-    <footer>
+    <footer data-aos="fade-up" data-aos-anchor-placement="top-bottom">
       <div class="container">
         <div class="footer_left">
           <div class="top">
@@ -1465,6 +1475,10 @@
         </svg>
       </button>
     </a>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
     <script src="./js/index.js"></script>
   </body>
 </html>

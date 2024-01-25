@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="./css/global.css" />
   </head>
   <body>
-    <header>
+    <header id="home">
       <div class="header_top" id="header">
         <div class="container">
           <p class="header_top_p">Get your dream house in a week.</p>
@@ -48,19 +48,23 @@
         </span>
       </button>
       <div class="site_bar_text">
-        <p><a href=""> Home </a></p>
-        <p>
-          <a href=""> Properties </a>
+        <p class="sitebar"><a href="#home"> Home </a></p>
+        <p class="sitebar">
+          <a href="#properties"> Properties </a>
         </p>
-        <p><a href=""> About </a></p>
-        <p><a href=""> Contact </a></p>
-        <p class="serch">
-          <a href=""> Search </a>
+        <p class="sitebar"><a href="#about"> About </a></p>
+        <p class="sitebar"><a href="#contact"> Contact </a></p>
+        <p class="sitebar" class="serch">
+          <a href="#search"> Search </a>
         </p>
-        <button class="nav_cart">
-          <img src="./assets/images/shopping_bag.svg" alt="" /> Cart
-        </button>
-        <button class="find_nav">Find a property</button>
+        <a class="sitebar" href="#cart">
+          <button class="nav_cart">
+            <img src="./assets/images/shopping_bag.svg" alt="" /> Cart
+          </button>
+        </a>
+        <a class="sitebar" href="#family">
+          <button class="find_nav">Find a property</button>
+        </a>
       </div>
       <nav>
         <div class="container">
@@ -116,9 +120,9 @@
           </div>
           <div class="nav_right">
             <div class="text_nav">
-              <p><a href=""> Home </a></p>
+              <p><a href="#home"> Home </a></p>
               <p>
-                <a href=""> Properties </a>
+                <a href="#properties"> Properties </a>
                 <span class="pro">
                   <svg
                     width="10"
@@ -133,8 +137,8 @@
                   </svg>
                 </span>
               </p>
-              <p><a href=""> About </a></p>
-              <p><a href=""> Contact </a></p>
+              <p><a href="#about"> About </a></p>
+              <p><a href="#contact"> Contact </a></p>
               <p class="serch">
                 <span class="search">
                   <svg
@@ -149,12 +153,16 @@
                     />
                   </svg>
                 </span>
-                <a href=""> Search </a>
+                <a href="#search"> Search </a>
               </p>
-              <button class="nav_cart">
-                <img src="./assets/images/shopping_bag.svg" alt="" /> Cart
-              </button>
-              <button class="find_nav">Find a property</button>
+              <a href="#cart">
+                <button class="nav_cart">
+                  <img src="./assets/images/shopping_bag.svg" alt="" /> Cart
+                </button>
+              </a>
+              <a href="#family">
+                <button class="find_nav">Find a property</button>
+              </a>
             </div>
           </div>
         </div>
@@ -190,7 +198,7 @@
         </div>
       </div>
     </main>
-    <section class="logo_section">
+    <section class="logo_section" id="properties">
       <div class="container">
         <div class="logo_w">
           <div class="logo_left">
@@ -440,7 +448,7 @@
         </div>
       </div>
     </section>
-    <section class="comfort">
+    <section class="comfort" id="about">
       <div class="container">
         <div class="comfort_left">
           <div class="comfort_btn">Comfort first</div>
@@ -526,7 +534,7 @@
         </div>
       </div>
     </section>
-    <section class="products">
+    <section class="products" id="cart">
       <img
         src="./assets/images/IMAGE (20).png"
         alt=""
@@ -999,7 +1007,7 @@
         class="products_image_t"
       />
     </section>
-    <section class="locations">
+    <section class="locations" id="family">
       <div class="container">
         <h1>Locations</h1>
         <p class="p">
@@ -1153,8 +1161,7 @@
         </div>
       </div>
     </section>
-
-    <section class="customers">
+    <section class="customers" id="contact">
       <div class="container">
         <h1>What customers say</h1>
         <p>Faucibus orci luctus et ultrices posuere cubilia curae.</p>
@@ -1196,7 +1203,7 @@
             <div class="user">
               <img src="./assets/images/logoSvg/IMAGE (22).png" alt="" />
               <div>
-                <h3>Michael Webb</h3>
+                <h3>Amber Keene</h3>
                 <p>Customer</p>
               </div>
             </div>
@@ -1217,7 +1224,7 @@
             <div class="user">
               <img src="./assets/images/logoSvg/IMAGE (23).png" alt="" />
               <div>
-                <h3>Michael Webb</h3>
+                <h3>Sarah Tarleton</h3>
                 <p>Customer</p>
               </div>
             </div>
@@ -1225,8 +1232,7 @@
         </div>
       </div>
     </section>
-
-    <section class="blog">
+    <section class="blog" id="search">
       <div class="container">
         <button class="blog_btn">Blog</button>
         <h1>Latest posts</h1>
@@ -1331,7 +1337,6 @@
         </div>
       </div>
     </section>
-
     <footer>
       <div class="container">
         <div class="footer_left">
@@ -1355,15 +1360,15 @@
             </a>
           </div>
           <div>
-            <p><a href="#">Pages</a></p>
-            <p><a href="#">Home</a></p>
-            <p><a href="#">About</a></p>
+            <p><a href="#pages">Pages</a></p>
+            <p><a href="#home">Home</a></p>
+            <p><a href="#about">About</a></p>
             <p><a href="#">Frame</a></p>
-            <p><a href="#">Blog</a></p>
+            <p><a href="#blog">Blog</a></p>
             <p><a href="#">Agents</a></p>
-            <p><a href="#">Contact</a></p>
+            <p><a href="#contact">Contact</a></p>
             <p><a href="#">FAQs</a></p>
-            <p><a href="#">Properties</a></p>
+            <p><a href="#properties">Properties</a></p>
           </div>
           <div>
             <p><a href="#">CMS Pages</a></p>
@@ -1451,7 +1456,15 @@
         </div>
       </div>
     </footer>
-
+    <a href="#">
+      <button class="up_btn">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+          <path
+            d="M233.4 105.4c12.5-12.5 32.8-12.5 45.3 0l192 192c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L256 173.3 86.6 342.6c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3l192-192z"
+          />
+        </svg>
+      </button>
+    </a>
     <script src="./js/index.js"></script>
   </body>
 </html>

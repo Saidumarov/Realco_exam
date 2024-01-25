@@ -1,6 +1,7 @@
-@use "./them/them";
+@use "./theme/theme";
 @use "./bases/typography";
 @use "components/container.scss";
 @use "./layout/footer";
 @use "./layout/header";
 @use "./page/min";
+@use "./components/button";

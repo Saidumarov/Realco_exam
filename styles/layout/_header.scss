@@ -1,6 +1,3 @@
-html {
-  scroll-snap-type: mandatory;
-}
 body {
   width: 100%;
   height: 100%;
@@ -228,6 +225,17 @@ nav {
     .ste_bar.active div:nth-child(3) {
       transform: translateY(-8px) rotate(-45deg);
     }
+
+    .ste_bar div:nth-child(1) {
+      transform: translateY(0px) rotate(360deg);
+    }
+    .ste_bar div:nth-child(2) {
+      opacity: 1;
+    }
+
+    .ste_bar div:nth-child(3) {
+      transform: translateY(0px) rotate(-360deg);
+    }
   }
 }
 
@@ -325,6 +333,9 @@ nav {
       }
     }
     .site_bar_text.active {
+      left: 0;
+    }
+    .site_bar_text.activa {
       left: 0;
     }
 

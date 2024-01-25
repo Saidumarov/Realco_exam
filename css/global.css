@@ -9,7 +9,7 @@
   --opasity: 0.5;
   --min_hom_t: #e7e8e3;
   --body: rgb(34, 42, 56);
-  --min_p: #65665c;
+  --min_p: rgb(226, 227, 220);
   --logo: rgb(235, 242, 242);
   --text_color: rgb(235, 242, 242);
   --card: rgb(39, 48, 63);
@@ -29,6 +29,10 @@
   --body: #ffff;
   --text_color: #65665c;
   --card: #ffffff;
+}
+
+html {
+  scroll-snap-type: mandatory;
 }
 
 * {
@@ -60,10 +64,6 @@ body {
     width: 90%;
   }
 }
-html {
-  scroll-snap-type: mandatory;
-}
-
 footer {
   width: 100%;
   height: 350px;
@@ -236,10 +236,6 @@ footer .footer_bottom .container .footer_ico svg {
     width: 35%;
   }
 }
-html {
-  scroll-snap-type: mandatory;
-}
-
 body {
   width: 100%;
   height: 100%;
@@ -458,6 +454,15 @@ nav .container .ste_bar.active div:nth-child(1) {
 nav .container .ste_bar.active div:nth-child(3) {
   transform: translateY(-8px) rotate(-45deg);
 }
+nav .container .ste_bar div:nth-child(1) {
+  transform: translateY(0px) rotate(360deg);
+}
+nav .container .ste_bar div:nth-child(2) {
+  opacity: 1;
+}
+nav .container .ste_bar div:nth-child(3) {
+  transform: translateY(0px) rotate(-360deg);
+}
 
 @media screen and (max-width: 1340px) {
   nav.sticky {
@@ -543,6 +548,9 @@ nav .container .ste_bar.active div:nth-child(3) {
     cursor: pointer;
   }
   header .site_bar_text.active {
+    left: 0;
+  }
+  header .site_bar_text.activa {
     left: 0;
   }
   header .nav_cart {
@@ -675,6 +683,7 @@ main .min_hom .container .min_hom_left .min_cnter .input {
   width: 100%;
   position: relative;
   z-index: 2;
+  margin-top: 15px;
 }
 main .min_hom .container .min_hom_left .min_cnter .input img {
   position: absolute;
@@ -1500,6 +1509,13 @@ main .min_hom .container .min_hom_right img {
   right: 10px;
   margin-top: -70px;
   cursor: pointer;
+  color: #2a2c1f;
+  text-align: center;
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 150% */
 }
 .blog .container .blog_cards {
   display: flex;
@@ -2060,4 +2076,34 @@ main .min_hom .container .min_hom_right img {
   .locations .container .location_cards div {
     width: 300px;
   }
+}
+.up_btn {
+  width: 50px;
+  height: 50px;
+  background-color: rgb(207, 110, 72);
+  position: absolute;
+  right: 0;
+  bottom: -10%;
+  opacity: 0;
+  cursor: pointer;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  outline: none;
+  right: 30px;
+  position: fixed;
+  transition: 0.4s all ease-in-out;
+}
+.up_btn svg {
+  width: 30px;
+  height: 30px;
+  fill: white;
+}
+
+.up_btn.active {
+  bottom: 50px;
+  opacity: 1;
+  transition: 0.4s all ease-in-out;
 }

@@ -1535,7 +1535,6 @@ main {
             margin-top: 200px;
             .input {
               position: relative;
-              z-index: 10;
               input {
                 display: block;
                 margin-left: auto;
@@ -1543,7 +1542,6 @@ main {
               }
               .btn_min_hom {
                 position: relative;
-                z-index: 10;
               }
             }
           }

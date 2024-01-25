@@ -2095,6 +2095,7 @@ main .min_hom .container .min_hom_right img {
   right: 30px;
   position: fixed;
   transition: 0.4s all ease-in-out;
+  z-index: 5;
 }
 .up_btn svg {
   width: 30px;

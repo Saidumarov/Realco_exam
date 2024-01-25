@@ -1527,7 +1527,7 @@ main {
 @media screen and (max-width: 450px) {
   main {
     .min_hom {
-      height: 1135px;
+      height: 1060px;
       .container {
         .min_hom_left {
           .min_cnter {
@@ -1535,19 +1535,18 @@ main {
             margin-top: 200px;
             .input {
               position: relative;
+              width: 100%;
               input {
+                width: 100%;
                 display: block;
                 margin-left: auto;
                 margin-right: auto;
-              }
-              .btn_min_hom {
-                position: relative;
               }
             }
           }
         }
         .min_hom_right {
-          top: 800px;
+          top: 755px;
           img {
             width: 100%;
             height: 430px;

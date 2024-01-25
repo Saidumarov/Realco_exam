@@ -2055,7 +2055,7 @@ main .min_hom .container .min_hom_right img {
 }
 @media screen and (max-width: 450px) {
   main .min_hom {
-    height: 1135px;
+    height: 1060px;
   }
   main .min_hom .container .min_hom_left .min_cnter {
     width: 100%;
@@ -2063,17 +2063,16 @@ main .min_hom .container .min_hom_right img {
   }
   main .min_hom .container .min_hom_left .min_cnter .input {
     position: relative;
+    width: 100%;
   }
   main .min_hom .container .min_hom_left .min_cnter .input input {
+    width: 100%;
     display: block;
     margin-left: auto;
     margin-right: auto;
   }
-  main .min_hom .container .min_hom_left .min_cnter .input .btn_min_hom {
-    position: relative;
-  }
   main .min_hom .container .min_hom_right {
-    top: 800px;
+    top: 755px;
   }
   main .min_hom .container .min_hom_right img {
     width: 100%;
